@@ -7,7 +7,7 @@ on:
   workflow_dispatch:  # Allow manual triggering
 
 env: # hard-code resource names
-  AWS_REGION: us-west-1
+  AWS_REGION: us-west-2
   TFSTATE_KEY: application-signals/demo-applications
   TFSTATE_BUCKET: tfstate-e066a2c1-e858-4df5-be54-937acdb2f595 #  prerequisite: manually create a bucket using  "aws s3 mb s3://tfstate-$(uuidgen | tr A-Z a-z)" and paste bucket name here.
   TFSTATE_REGION: us-west-2
